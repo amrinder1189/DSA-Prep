@@ -1,0 +1,13 @@
+#checking if the array is sorted ?
+
+arr = [1,2,3]
+prev = arr[0]
+
+for i in arr:
+    if prev <= i:
+        prev = i
+        print("okay arr is sorted")
+    else:
+        print("not sorted")
+        
+        
