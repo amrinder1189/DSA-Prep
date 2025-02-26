@@ -1,0 +1,17 @@
+arr = [1,0,2,0,3,4]
+
+#  i need to move all the zeros to the end /
+n = len(arr)
+
+for i in range(n):
+    if arr[i] == 0:
+            temp = arr[i]
+            for j in range(i,n):
+                if j < n-1:
+                    arr[j] = arr[j+1]
+            
+            arr[n-1] = temp
+
+print(arr)
+
+
